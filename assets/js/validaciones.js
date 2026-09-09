@@ -8,7 +8,7 @@ function validarFormulario() {
     const mensaje = document.getElementById("mensaje").value;
 
     // Validar nombre
-    if (nombre.length < 2 || nombre.length > 100) { // Si el nombre es muy corto o muy largo
+    if (nombre.length < 2 || nombre.length > 100) { // Por si el nombre es muy corto o muy largo
         document.getElementById("error_nombre").style.display = "block"; // Muestra el mensaje de error
         esValido = false; // Marca el formulario como inválido
     } else {
