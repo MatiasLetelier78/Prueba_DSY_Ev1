@@ -30,8 +30,11 @@ Abrir el archivo index.html en el navegador.
 
 # Integrantes
 Matias Letelier
+
 Matias Franke
+
 Florencia Ferrada
+
 
 # Asignatura
 DSY1104 - Desarrollo Fullstack II
