@@ -25,9 +25,6 @@ Cada producto del catálogo lleva a su propia página de detalle
 Video embebido de YouTube
 Diseño responsivo básico con los colores de la marca (negro, azul y verde)
 
-# Cómo verlo
-Abrir el archivo index.html en el navegador.
-
 # Integrantes
 Matias Letelier
 
