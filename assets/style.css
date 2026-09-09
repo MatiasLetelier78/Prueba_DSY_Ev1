@@ -106,3 +106,9 @@ footer p, footer a {
     cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
     display: inline-block; /* Permite darle padding aunque sea un link */
 }
+.detalle img {
+    width: 100%; /* La imagen ocupa todo el ancho de la ficha */
+    max-height: 250px; /* Alto máximo de la imagen */
+    object-fit: contain; /* Achica/agranda la imagen sin deformarla */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
