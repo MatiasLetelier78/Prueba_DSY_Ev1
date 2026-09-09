@@ -83,6 +83,7 @@ nav a {
     color: #D3D3D3; /* Color gris claro para el precio */
 }
 
+
 footer {
     background-color: #000000; /* Color de fondo del footer (negro) */
     border-top: 2px solid #39FF14; /* Línea verde arriba del footer */
@@ -120,4 +121,46 @@ footer p, footer a {
     border-radius: 10px; /* Bordes redondeados */
     background-color: #111111; /* Fondo gris muy oscuro */
     text-align: center; /* Centra el texto */
+}
+.formulario {
+    max-width: 400px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    border: 1px solid #1E90FF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.formulario input, .formulario textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #1E90FF;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario button {
+    margin-top: 20px;
+}
+
+.error {
+    color: #ff5c5c;
+    font-size: 13px;
+    display: none;
+    margin: 5px 0 0;
+}
+
+.exito {
+    color: #39FF14;
+    text-align: center;
+    display: none;
+    margin-top: 15px;
 }
