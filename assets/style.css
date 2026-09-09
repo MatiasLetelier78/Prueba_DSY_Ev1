@@ -36,3 +36,62 @@ nav a {
     text-decoration: none; /* Quita el subrayado de los links */
     font-weight: bold; /* Texto en negrita */
 }
+.frase {
+    text-align: center; /* Centra el texto de la sección */
+    padding: 50px 20px; /* Espacio interno arriba/abajo y a los costados */
+}
+
+.frase p {
+    color: #D3D3D3; /* Color gris claro para el texto secundario */
+}
+.video-section {
+    text-align: center; /* Centra el contenido de la sección */
+    padding: 20px; /* Espacio interno */
+}
+
+.video-section iframe {
+    width: 100%; /* El video ocupa todo el ancho disponible */
+    max-width: 700px; /* Pero no crece más de 700px */
+    height: 400px; /* Alto fijo del video */
+    border: none; /* Quita el borde por defecto del iframe */
+}
+
+.productos {
+    display: flex; /* Pone las tarjetas de producto en fila */
+    flex-wrap: wrap; /* Si no caben, pasan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 0 20px 40px; /* Espacio interno a los costados y abajo */
+}
+
+.producto {
+    background-color: #111111; /* Color de fondo de la tarjeta (gris muy oscuro) */
+    border: 1px solid #1E90FF; /* Borde azul de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno de la tarjeta */
+    width: 220px; /* Ancho fijo de la tarjeta */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+.producto img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 150px; /* Alto fijo de la imagen */
+    object-fit: contain; /* Achica/agranda la imagen sin deformarla ni recortarla */
+}
+
+.producto p {
+    color: #D3D3D3; /* Color gris claro para el precio */
+}
+
+footer {
+    background-color: #000000; /* Color de fondo del footer (negro) */
+    border-top: 2px solid #39FF14; /* Línea verde arriba del footer */
+    text-align: center; /* Centra el texto del footer */
+    padding: 20px; /* Espacio interno */
+    margin-top: 30px; /* Separa el footer del contenido de arriba */
+}
+
+footer p, footer a {
+    color: #D3D3D3; /* Color gris claro para el texto del footer */
+    text-decoration: none; /* Quita el subrayado de los links */
+}
