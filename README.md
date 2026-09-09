@@ -35,3 +35,7 @@ Florencia Ferrada
 
 # Asignatura
 DSY1104 - Desarrollo Fullstack II
+# Declaracion de IA:
+Para el desarrollo de este proyecto (tienda online Level-Up Gamer, Evaluación Parcial 1 de DSY1104), se utilizó la herramienta de inteligencia artificial Claude (Anthropic) como apoyo en las siguientes tareas:
+hojas de estilo CSS y funciones de validación en JavaScript del sitio.
+Elaboración de material de apoyo para el estudio y preparación de la presentación oral del proyecto.
