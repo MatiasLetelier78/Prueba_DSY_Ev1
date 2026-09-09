@@ -36,6 +36,7 @@ nav a {
     text-decoration: none; /* Quita el subrayado de los links */
     font-weight: bold; /* Texto en negrita */
 }
+
 .frase {
     text-align: center; /* Centra el texto de la sección */
     padding: 50px 20px; /* Espacio interno arriba/abajo y a los costados */
@@ -44,6 +45,19 @@ nav a {
 .frase p {
     color: #D3D3D3; /* Color gris claro para el texto secundario */
 }
+
+.btn {
+    background-color: #1E90FF; /* Color de fondo del botón (azul) */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: none; /* Quita el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado si el botón es un link */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
+    display: inline-block; /* Permite darle padding aunque sea un link */
+}
+
 .video-section {
     text-align: center; /* Centra el contenido de la sección */
     padding: 20px; /* Espacio interno */
@@ -95,32 +109,17 @@ footer p, footer a {
     color: #D3D3D3; /* Color gris claro para el texto del footer */
     text-decoration: none; /* Quita el subrayado de los links */
 }
-.btn {
-    background-color: #1E90FF; /* Color de fondo del botón (azul) */
-    color: #ffffff; /* Color del texto del botón */
-    padding: 10px 20px; /* Espacio interno del botón */
-    border: none; /* Quita el borde por defecto */
-    border-radius: 5px; /* Bordes redondeados */
-    text-decoration: none; /* Quita el subrayado si el botón es un link */
-    font-weight: bold; /* Texto en negrita */
-    cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
-    display: inline-block; /* Permite darle padding aunque sea un link */
-}
-.detalle img {
-    width: 100%; /* La imagen ocupa todo el ancho de la ficha */
-    max-height: 250px; /* Alto máximo de la imagen */
-    object-fit: contain; /* Achica/agranda la imagen sin deformarla */
-    margin-bottom: 15px; /* Espacio debajo de la imagen */
-}
-.detalle {
-    max-width: 400px; /* Ancho máximo de la ficha de producto */
-    margin: 20px auto 40px; /* Centra la ficha horizontalmente */
+
+.formulario {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px auto 40px; /* Centra el formulario horizontalmente (el "auto") */
     padding: 20px; /* Espacio interno */
     border: 1px solid #1E90FF; /* Borde azul */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #111111; /* Fondo gris muy oscuro */
-    text-align: center; /* Centra el texto */
+    display: flex; /* Para poder acomodar los campos en columna */
+    flex-direction: column; /* Pone los campos uno debajo del otro */
 }
+
 .formulario label {
     margin-top: 15px; /* Espacio arriba de cada etiqueta */
     font-weight: bold; /* Texto en negrita */
@@ -152,4 +151,22 @@ footer p, footer a {
     text-align: center; /* Centra el texto */
     display: none; /* Oculto por defecto, JS lo muestra al enviar bien el formulario */
     margin-top: 15px; /* Espacio arriba del mensaje */
+}
+
+/* ---------- Detalle de producto ---------- */
+.detalle {
+    max-width: 400px; /* Ancho máximo de la ficha de producto */
+    margin: 20px auto 40px; /* Centra la ficha horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #1E90FF; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #111111; /* Fondo gris muy oscuro */
+    text-align: center; /* Centra el texto */
+}
+
+.detalle img {
+    width: 100%; /* La imagen ocupa todo el ancho de la ficha */
+    max-height: 250px; /* Alto máximo de la imagen */
+    object-fit: contain; /* Achica/agranda la imagen sin deformarla */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
 }
