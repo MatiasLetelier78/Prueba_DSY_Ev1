@@ -95,3 +95,14 @@ footer p, footer a {
     color: #D3D3D3; /* Color gris claro para el texto del footer */
     text-decoration: none; /* Quita el subrayado de los links */
 }
+.btn {
+    background-color: #1E90FF; /* Color de fondo del botón (azul) */
+    color: #ffffff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border: none; /* Quita el borde por defecto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado si el botón es un link */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a "mano" al pasar por encima */
+    display: inline-block; /* Permite darle padding aunque sea un link */
+}
