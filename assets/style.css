@@ -112,3 +112,12 @@ footer p, footer a {
     object-fit: contain; /* Achica/agranda la imagen sin deformarla */
     margin-bottom: 15px; /* Espacio debajo de la imagen */
 }
+.detalle {
+    max-width: 400px; /* Ancho máximo de la ficha de producto */
+    margin: 20px auto 40px; /* Centra la ficha horizontalmente */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #1E90FF; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #111111; /* Fondo gris muy oscuro */
+    text-align: center; /* Centra el texto */
+}
