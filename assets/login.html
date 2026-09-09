@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <title>Iniciar sesión - Level-Up Gamer</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,25 +27,29 @@
     </header>
 
     <main>
-        <h1>Detalle del producto</h1>
+        <h1>Iniciar sesión</h1>
 
-        <div class="detalle">
-            <img id="imagenProducto" src="" alt="Imagen del producto">
-            <h2 id="nombreProducto"></h2>
-            <p id="precioProducto"></p>
+        <form class="formulario" id="formularioLogin" onsubmit="return validarLogin()">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <p class="error" id="error_email">Ingresa un correo electrónico válido.</p>
 
-            <p style="text-align:center;"><a href="catalogo.html">Volver al catálogo</a></p>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="current-password">
+            <p class="error" id="error_password">La contraseña no puede estar vacía.</p>
 
-        </div>
+            <button type="submit" class="btn">Iniciar sesión</button>
+            <p class="exito" id="mensajeExito">¡Inicio de sesión exitoso!</p>
+        </form>
 
+        <p style="text-align:center;">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
     </main>
 
     <footer>
         <p>Teléfono: +56 2 2244 556 | Antonio Varas #666, Santiago</p>
         <p>Horario: Lunes a Viernes de 09:00 a 18:00</p>
     </footer>
-</head>
-<body>
-    
+
+    <script src="assets/js/login.js"></script>
 </body>
 </html>

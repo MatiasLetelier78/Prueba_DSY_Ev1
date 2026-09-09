@@ -112,3 +112,45 @@ footer p, footer a {
     object-fit: contain; /* Achica/agranda la imagen sin deformarla */
     margin-bottom: 15px; /* Espacio debajo de la imagen */
 }
+.formulario {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 20px auto 40px; /* Centra el formulario horizontalmente (el "auto") */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #1E90FF; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Para poder acomodar los campos en columna */
+    flex-direction: column; /* Pone los campos uno debajo del otro */
+}
+
+.formulario label {
+    margin-top: 15px; /* Espacio arriba de cada etiqueta */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.formulario input, .formulario textarea {
+    padding: 8px; /* Espacio interno del campo */
+    margin-top: 5px; /* Separa el campo de su etiqueta */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #1E90FF; /* Borde azul del campo */
+    background-color: #000000; /* Fondo negro del campo */
+    color: #ffffff; /* Color del texto que escribe el usuario */
+    font-family: 'Roboto', sans-serif; /* Misma tipografía que el resto del sitio */
+}
+
+.formulario button {
+    margin-top: 20px; /* Separa el botón del último campo */
+}
+
+.error {
+    color: #ff5c5c; /* Color rojo para los mensajes de error */
+    font-size: 13px; /* Tamaño de letra más chico */
+    display: none; /* Oculto por defecto, JS lo muestra si hay error */
+    margin: 5px 0 0; /* Espacio arriba del mensaje */
+}
+
+.exito {
+    color: #39FF14; /* Color verde para el mensaje de éxito */
+    text-align: center; /* Centra el texto */
+    display: none; /* Oculto por defecto, JS lo muestra al enviar bien el formulario */
+    margin-top: 15px; /* Espacio arriba del mensaje */
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - Level-Up Gamer</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/img/Gemini_Generated_Image_6uzpw96uzpw96uzp.jpg" alt="Logo Level-Up Gamer">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Crear cuenta</h1>
+        <p style="text-align:center; color:#D3D3D3;">Debes tener 18 años o más para registrarte. Si usas tu correo Duoc, obtienes 20% de descuento de por vida.</p>
+
+        <form class="formulario" id="formularioRegistro" onsubmit="return validarRegistro()">
+            <label for="nombreCompleto">Nombre completo</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" autocomplete="name">
+            <p class="error" id="error_nombre">El nombre debe tener entre 2 y 100 caracteres.</p>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <p class="error" id="error_email">Ingresa un correo electrónico válido.</p>
+
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" autocomplete="bday">
+            <p class="error" id="error_fecha">Debes tener 18 años o más para registrarte.</p>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" autocomplete="new-password">
+            <p class="error" id="error_password">La contraseña debe tener al menos 6 caracteres.</p>
+
+            <label for="confirmarPassword">Confirmar contraseña</label>
+            <input type="password" id="confirmarPassword" name="confirmarPassword" autocomplete="new-password">
+            <p class="error" id="error_confirmar">Las contraseñas no coinciden.</p>
+
+            <button type="submit" class="btn">Crear cuenta</button>
+            <p class="exito" id="mensajeExito">¡Cuenta creada con éxito!</p>
+            <p class="exito" id="mensajeDescuento">Tienes 20% de descuento de por vida por registrarte con correo Duoc.</p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Teléfono: +56 2 2244 556 | Antonio Varas #666, Santiago</p>
+        <p>Horario: Lunes a Viernes de 09:00 a 18:00</p>
+    </footer>
+
+    <script src="assets/js/registro.js"></script>
+</body>
+</html>
